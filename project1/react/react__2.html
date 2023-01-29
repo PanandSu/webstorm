@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>React2</title>
+</head>
+<body>
+<div id="1"></div>
+<script src="https://cdn.staticfile.org/react/16.8.6/umd/react.development.js"></script>
+<script src="https://cdn.staticfile.org/react-dom/16.8.6/umd/react-dom.development.js"></script>
+<script src="https://cdn.staticfile.org/babel-standalone/7.0.0-beta.3/babel.js"></script>
+<script type="text/babel">
+    /*
+    //使用JSX语法
+    const element = <p>现在时间是{new Date().toLocaleTimeString()}!</p>;
+    ReactDOM.render(
+        element,
+        document.getElementById("1")
+    );
+     */
+    function PreciseTime() {
+        return (
+            <div>
+                <h1>时间:{new Date().toLocaleTimeString()}</h1>
+                <p>panjinhao0320</p>
+            </div>
+        );
+    }
+    ReactDOM.render(
+        <PreciseTime/>,
+        document.getElementById("1")
+    );
+
+    setInterval(PreciseTime, 1000);
+</script>
+</body>
+</html>

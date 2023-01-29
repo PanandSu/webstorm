@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>slide</title>
+</head>
+<body>
+<button id="button1" onclick="click1()">previous slide</button>
+<img id="image" src="https://www.w3cschool.cn/statics/images/logo.png" alt="loading..."/>
+<button id="button2" onclick="click2()">next slide</button>
+<script>
+    let imgs = ["https://www.w3cschool.cn/statics/images/1.png",
+        "https://www.w3cschool.cn/statics/images/2.png",
+        "https://www.w3cschool.cn/statics/images/3.png"];
+
+    function click1() {
+        let num = 0;
+        let img = document.getElementById("image");
+        img.src = imgs[0];
+    }
+
+    function click2() {
+        let img = document.getElementById("image");
+        img.src = imgs[2];
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>React6</title>
+</head>
+<body>
+<div id="container"></div>
+<script src="https://cdn.staticfile.org/react/16.8.6/umd/react.development.js"></script>
+<script src="https://cdn.staticfile.org/react-dom/16.8.6/umd/react-dom.development.js"></script>
+<script src="https://cdn.staticfile.org/babel-standalone/7.0.0-beta.3/babel.js"></script>
+<script type="text/babel">
+    class P extends React.Component {
+        render() {
+            return (
+                <div>
+                    <p>p的id是{this.props.id}</p>
+                    <p>p的className是{this.props.className}</p>
+                    <p>p的fontsize是{this.props.style.fontsize}</p>
+                    <p>p的fontcolor是{this.props.style.fontcolor}</p>
+                </div>
+            )
+        }
+    }
+
+    ReactDOM.render(
+        <P id="001" className="paragraph" style={
+            {
+                fontsize: "30px", fontcolor: "red"
+            }
+        }/>,
+        document.getElementById("container")
+    );
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style></style>
+    <title>React0</title>
+</head>
+<body>
+<h1 id="1">React1</h1>
+<div id="2">React2</div>
+<p id="3">React3</p>
+<script src="https://cdn.staticfile.org/react/16.8.6/umd/react.development.js"></script>
+<script src="https://cdn.staticfile.org/react-dom/16.8.6/umd/react-dom.development.js"></script>
+<script src="https://cdn.staticfile.org/babel-standalone/7.0.0-beta.3/babel.js"></script>
+<script type="text/babel">
+    let element1 = <p>Hello world!</p>;
+    ReactDOM.render(
+        element1,
+        document.getElementById("1")
+    );
+    let element2 =(
+        <div>
+            <h1>PanJinHao</h1>
+            <h2>SuBingBing</h2>
+            <p>LOVE</p>
+        </div>
+    );
+    ReactDOM.render(
+        element2,
+        document.getElementById("2")
+
+    );
+    let message="I LOVE YOU!";
+    let element3=<p>{message}</p>
+    ReactDOM.render(
+        element3,
+        document.getElementById("3")
+    );
+</script>
+</body>
+</html>
